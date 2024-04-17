@@ -8,11 +8,11 @@
     background-color: #fff;
     border-radius: 0.25rem;
     box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
-    width: 24rem;
+    width: 600px;
   }
   
   img {
-    border-bottom: 0.25rem solid #017114;
+    border-bottom: 0.25rem solid #f9cd00;
     border-radius: 0.25rem 0.25rem 0 0;
     height: auto;
     width: 100%;
@@ -63,12 +63,12 @@
     margin: 0;
   }
   .subheader {
-    font-size: 1.0 rem;
+    font-size: 0.75 rem;
     margin: 0;
   }
 
   h3 {
-    font-family: 'Ojuju',Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Dosis',Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     font-weight: 600;
   }
