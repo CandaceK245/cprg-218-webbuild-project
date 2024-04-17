@@ -1,0 +1,194 @@
+body {
+    font-family: 'Marvel', 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+  
+  h1 {
+    font-family: 'Ojuju', Georgia, 'Times New Roman', Times, serif;
+    font-size: 6.0rem;
+    font-weight: 600;
+    text-align: center;
+    margin-block-start: .50px;
+    margin-block-end: .50px
+  }
+  
+  @font-face {
+    font-family: 'Ojuju';
+    src: url(../Fonts/Ojuju/Ojuju-VariableFont_wght.ttf);
+  }
+
+  @font-face {
+    font-family: 'Marvel';
+    src: url(../Fonts/Marvel/Marvel-Regular.ttf);
+  }
+
+  h2 {
+    font-family: 'Marvel','Courier New', Courier, monospace;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.1;
+  }  
+  h4 {
+    font-family: 'Ojuju', Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-family: 'Marvel', 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+  }
+  h6,
+  p {
+    line-height: 1.1;
+    margin: 1rem 0;
+  }  
+  
+   h6 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  
+  
+  button {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  /* Sections */
+  .container {
+    margin: 3rem auto;
+    max-width: 75rem;
+    padding: 3rem 1.5rem;
+    position: relative;
+  }
+  
+  /* Section Header Content */
+  .header-container {
+    background-color: #DDDDDD;
+    text-align: center;
+    padding: 6rem 1rem;
+  }
+  
+  /* Option header */
+  .option-container {
+    text-align: center;
+    background-color: #EEEEEE;
+    padding: 3rem 1rem;
+  }
+
+  .remove-assignment-content {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hero-container {
+    background-image: url(../Optimized-photos-assets/Hero-Calgary-Skyline-min.JPG);
+    background-position: center;
+    background-size: contain;
+    color: #0f0f0f;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+    flex-direction: column;
+  }
+  
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #faaf90; 
+    height: auto;
+    text-align: center;
+    align-items: center;
+  }
+  
+
+  .footer-container {
+    display: flex;
+    background-color: #b3c7f7;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .content-image {
+    max-height: 590px;
+    max-width: 100%;
+    padding: 18px;
+  }
+  
+  .block {
+    padding: 16px;
+  }
+  
+  .footer-block{
+    min-width: 25%;
+  }
+
+  /* Navigation Bar */
+  .site-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0f0f0f;
+  }
+  .site-nav li {
+    float:left;
+  }
+  .site-nav li a {
+    display: block;
+    padding: 8px;
+    font-size: x-large;
+    color: #fff;
+    text-decoration: none;
+  } 
+  .current {
+    background-color: rgb(255, 0, 43);
+  }
+  
+  /* Footer Section responsive */
+  @media screen and (max-width: 842px) {
+    .map {
+        display: none;
+    }
+    .about-us{
+        max-width: 50%;
+    }
+  }
+
+  /* Tablet */
+  @media  screen and (min-width: 842px) and (max-width: 1200px) {
+   .map {
+        width: 600px;
+   }
+   .about-us {
+        max-width: 35%;
+   }
+  }
+  
+  /* Desktop */
+  @media screen and (min-width: 1200px) {
+    .map {
+        width: 600px;
+    }
+    .about-us {
+        max-width: 25%;
+    }
+  }
