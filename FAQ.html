@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="styles/AccordianStyle.css">
   <script defer src="source/accordion-code.js"></script>
   <script defer src="source/footer-code.js"></script>
+  <script defer src="source/moviedb-api.js"></script>
   <title>Web Building</title>
 </head>
 <body>
@@ -25,7 +26,10 @@
 
   <section id="content" class="container content-container">
     <div class="Market-Link">
-      <h3>Reviews Coming Soon</h3>            
+      <h3>Reviews Coming Soon</h3>     
+      <select id="dropdown" class="dropdown"></select>
+      <button id="submit-button" class="button">Submit</button>
+      <ul id="movie-card"></ul>      
     </div>
 </section>
 
@@ -79,9 +83,8 @@
     </div>
     <div class="footer-block about-us">
     <p>  
-    <h4>About Us</h4>
-    <p>"Stay updated on all the hottest happenings in our city with our vibrant event blog.
-    From concerts to cultural festivals, we're your ultimate guide to experiencing the pulse of our community."
+    <h4>Quote</h4>
+    <p>"Movies are the closest thing we have to time travel." - Quentin Tarantino
     </p>
     <p>&copy; Candace K. <span id="year"> </span></p>
     </div>

@@ -4,7 +4,7 @@
     height: auto;
   }
   .accordion {
-    background-color: #b1a9de;
+    background-color: #f9cd00;
     color: #000000;
     cursor: pointer;
     padding: 18px;
@@ -40,8 +40,89 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+  h2 {
+    font-family: 'Dosis','Courier New', Courier, monospace;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.1;
+  }  
   h3 {
     font-family: 'Ojuju',Georgia, 'Times New Roman', Times, serif;
     font-size: 3.5rem;
     font-weight: 600;
   }
+
+  .card-container {
+    display: flex;
+    list-style: none;
+    gap: 10px 10px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
+    width: 90%;
+  }
+  
+  img {
+    border-bottom: 0.25rem solid #f9cd00;
+    border-radius: 0.25rem 0.25rem 0 0;
+    height: auto;
+    width: 50%;
+  }
+    /* Mobile */
+    @media screen and (max-width: 842px) {
+      img {
+        min-height: 15.5rem;
+      }
+      .card-container {
+          flex-direction: column;
+          flex-wrap: nowrap;
+      }
+      .card{
+        display: block;
+      }
+    }
+  
+    /* Tablet */
+    @media  screen and (min-width: 842px) and (max-width: 1200px) {
+  
+      .card-container {
+          flex-wrap: wrap;
+      }
+      .card {
+          flex:auto;
+      }
+    }
+    
+    /* Desktop */
+    @media screen and (min-width: 1200px) {
+  
+      .card-container {
+          flex-wrap: wrap;
+      }
+      .container {
+          max-width: none;
+      }
+    }
+    
+    .card-content {
+      padding: 1rem;
+    }
+    
+    .header {
+      margin: 0;
+    }
+    .subheader {
+      margin: 0;
+    }
+  
+   
+    h3 {
+      font-family: 'Dosis',Georgia, 'Times New Roman', Times, serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
