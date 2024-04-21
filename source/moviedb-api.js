@@ -3,7 +3,7 @@ option1SubmitButton.addEventListener("click", movieDropdownClickHandler);
 renderDropdownOptions();
 
 async function fetchMovieDetails(movieName){
-    const url = "http://www.omdbapi.com/?i=" + movieName + "&apikey=5e52b91f";
+    const url = "https://www.omdbapi.com/?i=" + movieName + "&apikey=5e52b91f";
     try{
         const response = await fetch(url);
         const json = await response.json();
