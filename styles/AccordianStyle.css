@@ -53,25 +53,32 @@
   }
 
   .card-container {
-    display: flex;
+    display: grid 1fr;
+    justify-self: center;
     list-style: none;
     gap: 10px 10px;
+}
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #08A8B6; 
+  height: auto;
+  text-align: center;
+  align-items: center;
 }
 
 .card {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: #fff;
     border-radius: 0.25rem;
     box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
     width: 90%;
   }
   
   img {
-    border-bottom: 0.25rem solid #f9cd00;
     border-radius: 0.25rem 0.25rem 0 0;
     height: auto;
-    width: 50%;
+    width: 100%;
   }
     /* Mobile */
     @media screen and (max-width: 842px) {
@@ -118,11 +125,4 @@
     }
     .subheader {
       margin: 0;
-    }
-  
-   
-    h3 {
-      font-family: 'Dosis',Georgia, 'Times New Roman', Times, serif;
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
+    }  

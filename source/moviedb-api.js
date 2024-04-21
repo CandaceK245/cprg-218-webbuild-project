@@ -50,7 +50,7 @@ async function movieDropdownClickHandler(event){
 /*HTML from API call*/
 function createCardElement(item) {
     return `
-        <img class="postesr" src=${item.poster} alt="Poster for the movie ${item.title}">
+        <img class="poster" src=${item.poster} alt="Poster for the movie ${item.title}">
         <div class="card-content">
             <h2>
                 ${item.genre}

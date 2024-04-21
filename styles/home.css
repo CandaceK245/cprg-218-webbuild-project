@@ -11,6 +11,19 @@ h3 {
   background-color: #08a8b6; 
   height: auto;
 }
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #08A8B6; 
+  height: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.movies-list{
+  list-style-type: "\1f3a5";
+  list-style-position: inside;
+}
 
 
 /* Tablet and Mobile */

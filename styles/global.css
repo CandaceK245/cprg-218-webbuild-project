@@ -114,15 +114,15 @@ body {
     flex-direction: column;
   }
   
-  .content-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #08A8B6; 
-    height: auto;
-    text-align: center;
-    align-items: center;
+  a:link {
+    color: #090909;
   }
-  
+  a:visited{
+    color: #090909;
+  }
+  a:hover {
+    color:#EEEEEE;
+  }
 
   .footer-container {
     display: flex;
@@ -154,7 +154,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #0f0f0f;
+    background-color: #F9CD00;
   }
   .site-nav li {
     float:left;
@@ -163,11 +163,11 @@ body {
     display: block;
     padding: 8px;
     font-size: x-large;
-    color: #fff;
+    color: #090909;
     text-decoration: none;
   } 
   .current {
-    background-color: #08A8B6;
+    background-color: #ffffff;
   }
   
   /* Footer Section responsive */
